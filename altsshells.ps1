@@ -45,3 +45,4 @@ if (Test-Path $minecraftPath) {
 else {
     Write-Output "❗​ La cartella .minecraft non esiste nel percorso: $minecraftPath​"
 }
+
