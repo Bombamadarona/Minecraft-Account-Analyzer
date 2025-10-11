@@ -14,7 +14,13 @@ Write-Output ":::: ::   :::: ::       :: ::::   :: ::::  ::   :::  ::   :::   ::
 Write-Output ":: : :    :: : :       : :: : :  : :: ::    :   : :   :   : :  ::    :      :       :"    
 Write-Output ""
 Write-Output "https://discord.gg/UET6TdxFUk"
-Write-Output ""                                                                                           
+Write-Output ""
+
+Write-Host "`n------------------------------------------" -ForegroundColor DarkGray
+Write-Host "         MINECRAFT ACCOUNT ANALYZER"
+Write-Host "------------------------------------------`n" -ForegroundColor DarkGray
+
+
 if (Test-Path $minecraftPath) {
     if (Test-Path $usernameCachePath) {
         $usernameCacheContent = Get-Content -Path $usernameCachePath -Raw | ConvertFrom-Json
@@ -45,6 +51,7 @@ if (Test-Path $minecraftPath) {
 else {
     Write-Host "La cartella .minecraft non esiste nel percorso: $minecraftPath​" -ForegroundColor Red
 }
+
 
 
 
