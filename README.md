@@ -26,7 +26,7 @@ Questo script è stato realizzato dal server discord SS LEARN IT (https://discor
 Oppure puoi semplicemente eseguire lo script tramite un comando senza scaricare il file:
 
 1. Apri PowerShell (amministratore).
-2. `iex (iwr -useb "https://raw.githubusercontent.com/Bombamadarona/Alts-Analyzer/main/altsshells.ps1")`
+2. `iex (iwr -useb "https://raw.githubusercontent.com/Bombamadarona/Minecraft-Account-Analyzer/main/altsshells.ps1")`
 
 ## 📎 Note aggiuntive
 
