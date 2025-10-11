@@ -1,6 +1,7 @@
 # 🔍 Minecraft Account Analyzer (PowerShell)
 
 Questo script PowerShell permette di analizzare i file `usernamecache.json` e `usercache.json` presenti nella cartella `.minecraft` per visualizzare eventuali altri account Minecraft utilizzati nel client.
+
 Questo script è stato realizzato dal server discord SS LEARN IT (https://discord.gg/UET6TdxFUk).
 
 ## 🔍 Funzionalità
@@ -17,12 +18,18 @@ Questo script è stato realizzato dal server discord SS LEARN IT (https://discor
 
 ## ▶️ Utilizzo
 
-1. Apri PowerShell (amministratore)
+1. Apri PowerShell (amministratore).
 2. Copia e incolla lo script nel terminale oppure salvalo in un file, ad esempio `accaunt-analyzer.ps1`.
 3. Esegui lo script:
 `.\accaunt-analyzer.ps1`
 
-Oppure puoi semplicemente eseguire lo script tramite un comando senza scaricare il file
+Oppure puoi semplicemente eseguire lo script tramite un comando senza scaricare il file:
 
-1. Apri PowerShell (amministratore)
-2. `iex (iwr -useb "
+1. Apri PowerShell (amministratore).
+2. `iex (iwr -useb "https://raw.githubusercontent.com/Bombamadarona/Alts-Analyzer/main/altsshells.ps1")`
+
+## 📎 Note aggiuntive
+
+- Lo script non modifica alcun file, esegue solo una lettura.
+
+- Utile per effettuare controlli alts.
