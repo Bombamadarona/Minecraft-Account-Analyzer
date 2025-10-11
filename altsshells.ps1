@@ -22,12 +22,12 @@ if (Test-Path $minecraftPath) {
             $_.PSObject.Properties.Value
         } | Where-Object { $_ -match '^[A-Za-z0-9_]+$' } | Select-Object -Unique
         
-        Write-Output "Altri account trovati in usernamecache.json:"
+        Write-Host "Altri account trovati in usernamecache.json:" -ForegroundColor Yellow
         $otherUsernames | ForEach-Object { "- $_" }
         Write-Output ""
     }
     else {
-        Write-Output "Il file usernamecache.json non esiste nella cartella .minecraft"
+        Write-Host "Il file usernamecache.json non esiste nella cartella .minecraft" -ForegroundColor Red
         Write-Output ""
     }
     
@@ -35,15 +35,16 @@ if (Test-Path $minecraftPath) {
         $userCacheContent = Get-Content -Path $userCachePath -Raw | ConvertFrom-Json
         $otherAccounts = $userCacheContent | Select-Object -ExpandProperty "name" | Select-Object -Unique
         
-        Write-Output "Altri account trovati in usercache.json:"
+        Write-Host "Altri account trovati in usercache.json:" -ForegroundColor Yellow
         $otherAccounts | ForEach-Object { "- $_" }
     }
     else {
-        Write-Output "Il file usercache.json non esiste nella cartella .minecraft"
+        Write-Host "Il file usercache.json non esiste nella cartella .minecraft" -ForegroundColor Red
     }
 }
 else {
-    Write-Output "La cartella .minecraft non esiste nel percorso: $minecraftPath​"
+    Write-Host "La cartella .minecraft non esiste nel percorso: $minecraftPath​" -ForegroundColor Red
 }
+
 
 
