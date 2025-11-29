@@ -16,9 +16,11 @@ Write-Output ""
 Write-Output "https://discord.gg/UET6TdxFUk"
 Write-Output ""
 
-Write-Host "`n------------------------------------------" -ForegroundColor DarkGray
-Write-Host "         MINECRAFT ACCOUNT ANALYZER"
-Write-Host "------------------------------------------`n" -ForegroundColor DarkGray
+Write-Host ""
+Write-Host ("-" + ("=" * 58) + "-") -ForegroundColor Cyan
+Write-Host ("|" + (" " * 16) + "MINECRAFT ACCOUNT ANALYZER" + (" " * 16) + "|") -ForegroundColor Cyan
+Write-Host ("-" + ("=" * 58) + "-") -ForegroundColor Cyan
+Write-Host ""
 
 
 if (Test-Path $minecraftPath) {
@@ -28,7 +30,7 @@ if (Test-Path $minecraftPath) {
             $_.PSObject.Properties.Value
         } | Where-Object { $_ -match '^[A-Za-z0-9_]+$' } | Select-Object -Unique
         
-        Write-Host "Altri account trovati in usernamecache.json:" -ForegroundColor Yellow
+        Write-Host "Account trovati in usernamecache.json:" -ForegroundColor Yellow
         $otherUsernames | ForEach-Object { "- $_" }
         Write-Output ""
     }
@@ -41,7 +43,7 @@ if (Test-Path $minecraftPath) {
         $userCacheContent = Get-Content -Path $userCachePath -Raw | ConvertFrom-Json
         $otherAccounts = $userCacheContent | Select-Object -ExpandProperty "name" | Select-Object -Unique
         
-        Write-Host "Altri account trovati in usercache.json:" -ForegroundColor Yellow
+        Write-Host "Account trovati in usercache.json:" -ForegroundColor Yellow
         $otherAccounts | ForEach-Object { "- $_" }
     }
     else {
@@ -51,6 +53,7 @@ if (Test-Path $minecraftPath) {
 else {
     Write-Host "La cartella .minecraft non esiste nel percorso: $minecraftPath​" -ForegroundColor Red
 }
+
 
 
 
