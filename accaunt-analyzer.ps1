@@ -54,6 +54,11 @@ else {
     Write-Host "La cartella .minecraft non esiste nel percorso: $minecraftPath​" -ForegroundColor Red
 }
 
+Write-Host ""
+Write-Host ("-" + ("=" * 58) + "-") -ForegroundColor Cyan
+Write-Host ("|" + (" " * 19) + "CONTROLLO COMPLETATO" + (" " * 19) + "|") -ForegroundColor Cyan
+Write-Host ("-" + ("=" * 58) + "-") -ForegroundColor Cyan
+Write-Host ""
 
 
 
