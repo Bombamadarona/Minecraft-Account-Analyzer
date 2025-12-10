@@ -35,7 +35,7 @@ if (Test-Path $minecraftPath) {
         Write-Output ""
     }
     else {
-        Write-Host "Il file usernamecache.json non esiste nella cartella .minecraft" -ForegroundColor Red
+        Write-Host "[X] Il file usernamecache.json non esiste nella cartella .minecraft" -ForegroundColor Red
         Write-Output ""
     }
     
@@ -47,11 +47,11 @@ if (Test-Path $minecraftPath) {
         $otherAccounts | ForEach-Object { "- $_" }
     }
     else {
-        Write-Host "Il file usercache.json non esiste nella cartella .minecraft" -ForegroundColor Red
+        Write-Host "[X] Il file usercache.json non esiste nella cartella .minecraft" -ForegroundColor Red
     }
 }
 else {
-    Write-Host "La cartella .minecraft non esiste nel percorso: $minecraftPath​" -ForegroundColor Red
+    Write-Host "[X] La cartella .minecraft non esiste nel percorso: $minecraftPath​" -ForegroundColor Red
 }
 
 Write-Host ""
@@ -59,8 +59,3 @@ Write-Host ("-" + ("=" * 58) + "-") -ForegroundColor Cyan
 Write-Host ("|" + (" " * 19) + "CONTROLLO COMPLETATO" + (" " * 19) + "|") -ForegroundColor Cyan
 Write-Host ("-" + ("=" * 58) + "-") -ForegroundColor Cyan
 Write-Host ""
-
-
-
-
-
