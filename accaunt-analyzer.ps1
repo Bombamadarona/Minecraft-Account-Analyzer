@@ -2,19 +2,19 @@ $minecraftPath = "$env:APPDATA\.minecraft"
 $usernameCachePath = Join-Path -Path $minecraftPath -ChildPath "usernamecache.json"
 $userCachePath = Join-Path -Path $minecraftPath -ChildPath "usercache.json"              
                                                                                           
-Write-Output "@@@@@@    @@@@@@      @@@       @@@@@@@@   @@@@@@   @@@@@@@   @@@  @@@     @@@  @@@@@@@  "
-Write-Output "@@@@@@@   @@@@@@@      @@@       @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@ @@@     @@@  @@@@@@@  "
-Write-Output "!@@       !@@          @@!       @@!       @@!  @@@  @@!  @@@  @@!@!@@@     @@!    @@!    "
-Write-Output "!@!       !@!          !@!       !@!       !@!  @!@  !@!  @!@  !@!!@!@!     !@!    !@!    "
-Write-Output "!!@@!!    !!@@!!       @!!       @!!!:!    @!@!@!@!  @!@!!@!   @!@ !!@!     !!@    @!!    "
-Write-Output " !!@!!!    !!@!!!      !!!       !!!!!:    !!!@!!!!  !!@!@!    !@!  !!!     !!!    !!!    "
-Write-Output "     !:!       !:!     !!:       !!:       !!:  !!!  !!: :!!   !!:  !!!     !!:    !!:    "
-Write-Output "    !:!       !:!       :!:      :!:       :!:  !:!  :!:  !:!  :!:  !:!     :!:    :!:    "
-Write-Output ":::: ::   :::: ::       :: ::::   :: ::::  ::   :::  ::   :::   ::   ::      ::     ::  "
-Write-Output ":: : :    :: : :       : :: : :  : :: ::    :   : :   :   : :  ::    :      :       :"
-Write-Output ""
-Write-Output "https://discord.gg/UET6TdxFUk"
-Write-Output ""
+Write-Host "@@@@@@    @@@@@@      @@@       @@@@@@@@   @@@@@@   @@@@@@@   @@@  @@@     @@@  @@@@@@@  "        -ForegroundColor Red
+Write-Host "@@@@@@@   @@@@@@@      @@@       @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@ @@@     @@@  @@@@@@@  "       -ForegroundColor Red
+Write-Host "!@@       !@@          @@!       @@!       @@!  @@@  @@!  @@@  @@!@!@@@     @@!    @@!    "       -ForegroundColor Red
+Write-Host "!@!       !@!          !@!       !@!       !@!  @!@  !@!  @!@  !@!!@!@!     !@!    !@!    "       -ForegroundColor Red
+Write-Host "!!@@!!    !!@@!!       @!!       @!!!:!    @!@!@!@!  @!@!!@!   @!@ !!@!     !!@    @!!    "       -ForegroundColor Red
+Write-Host " !!@!!!    !!@!!!      !!!       !!!!!:    !!!@!!!!  !!@!@!    !@!  !!!     !!!    !!!    "       -ForegroundColor Red
+Write-Host "     !:!       !:!     !!:       !!:       !!:  !!!  !!: :!!   !!:  !!!     !!:    !!:    "       -ForegroundColor Red
+Write-Host "    !:!       !:!       :!:      :!:       :!:  !:!  :!:  !:!  :!:  !:!     :!:    :!:    "       -ForegroundColor Red
+Write-Host ":::: ::   :::: ::       :: ::::   :: ::::  ::   :::  ::   :::   ::   ::      ::     ::  "         -ForegroundColor Red
+Write-Host ":: : :    :: : :       : :: : :  : :: ::    :   : :   :   : :  ::    :      :       :"            -ForegroundColor Red
+Write-Host ""
+Write-Host "Discord: https://discord.gg/UET6TdxFUk"
+Write-Host ""
 
 Write-Host ""
 Write-Host ("-" + ("=" * 58) + "-") -ForegroundColor Cyan
@@ -59,3 +59,4 @@ Write-Host ("-" + ("=" * 58) + "-") -ForegroundColor Cyan
 Write-Host ("|" + (" " * 19) + "CONTROLLO COMPLETATO" + (" " * 19) + "|") -ForegroundColor Cyan
 Write-Host ("-" + ("=" * 58) + "-") -ForegroundColor Cyan
 Write-Host ""
+
